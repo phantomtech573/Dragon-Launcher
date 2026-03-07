@@ -1,3 +1,4 @@
+README.md
 Dependabot.yml
 https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
