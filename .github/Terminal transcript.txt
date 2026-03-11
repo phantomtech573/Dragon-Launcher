@@ -1,0 +1,78 @@
+*TERMINAL_trandcripz.txt
+# [Docs](ttps://termux.dev/docs)
+# [Donate](https://termux.dev/donate)
+# [Community](https://termux.dev/community)
+
+Working with packages:
+
+ - Search:  pkg search <query>
+ - Install: pkg install <package>
+ - Upgrade: pkg upgrade
+
+Subscribing to additional repositories:
+
+ - Root:    pkg install root-repo
+ - X11:     pkg install x11-repo
+
+For fixing any repository issues,
+try 'termux-change-repo' command.
+
+Report issues at https://termux.dev/issues
+~ $ apt update
+Get:1 https://mirrors.hust.edu.cn/termux/apt/termux-main stable InRelease [14.0 kB]
+Get:2 https://mirrors.hust.edu.cn/termux/apt/termux-x11 x11 InRelease [14.0 kB]
+Get:3 https://mirrors.hust.edu.cn/termux/apt/termux-main stable/main aarch64 Packages [543 kB]
+Get:4 https://mirrors.hust.edu.cn/termux/apt/termux-main stable/main aarch64 Contents (deb) [3020 kB]
+Get:5 https://mirrors.hust.edu.cn/termux/apt/termux-x11 x11/main aarch64 Packages [194 kB]
+Get:6 https://mirrors.hust.edu.cn/termux/apt/termux-x11 x11/main aarch64 Contents (deb) [3044 kB]
+Fetched 6829 kB in 7s (957 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+~ $ apt full-update
+E: Invalid operation full-update
+~ $ apt full-upgrade
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Calculating upgrade... Done
+The following package was automatically installed and is no longer required:
+  binutils
+Use 'apt autoremove' to remove it.
+The following packages will be upgraded:
+  gh harfbuzz libsqlite
+3 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+1 not fully installed or removed.
+Need to get 10.6 MB of archives.
+After this operation, 274 kB of additional disk space will be used.
+Do you want to continue? [Y/n]
+Get:1 https://mirrors.hust.edu.cn/termux/apt/termux-main stable/main aarch64 gh aarch64 2.88.0 [9068 kB]
+Get:2 https://mirrors.hust.edu.cn/termux/apt/termux-main stable/main aarch64 harfbuzz aarch64 13.1.0 [811 kB]
+Get:3 https://mirrors.hust.edu.cn/termux/apt/termux-main stable/main aarch64 libsqlite aarch64 3.52.0-1 [754 kB]
+Fetched 10.6 MB in 5s (2336 kB/s)
+(Reading database ... 46076 files and directories currently installed.)
+Preparing to unpack .../archives/gh_2.88.0_aarch64.deb ...
+Unpacking gh (2.88.0) over (2.87.3) ...
+Preparing to unpack .../harfbuzz_13.1.0_aarch64.deb ...
+Unpacking harfbuzz (13.1.0) over (13.0.1) ...
+Preparing to unpack .../libsqlite_3.52.0-1_aarch64.deb ...
+Unpacking libsqlite (3.52.0-1) over (3.52.0) ...
+Setting up harfbuzz (13.1.0) ...
+Setting up libsqlite (3.52.0-1) ...
+Setting up zeronet (0.7.1-9) ...
+Installing Python module: gevent...
+Collecting gevent
+  Using cached gevent-25.9.1.tar.gz (5.1 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting greenlet>=3.2.2 (from gevent)
+  Using cached greenlet-3.3.2-cp313-cp313-android_24_arm64_v8a.whl
+Collecting zope.event (from gevent)
+  Using cached zope_event-6.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting zope.interface (from gevent)
+  Using cached zope_interface-8.2-cp313-cp313-android_24_arm64_v8a.whl
+Using cached zope_event-6.1-py3-none-any.whl (6.4 kB)
+Building wheels for collected packages: gevent
+  Building wheel
