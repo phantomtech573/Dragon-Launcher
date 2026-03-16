@@ -354,8 +354,10 @@ registries:
 npm-registry
 The npm-registry type supports username and password, or token. If the account is a GitHub account, you can use a GitHub personal access token in place of the password.
 
-When using username and password, your .npmrc's auth token may contain a base64 encoded _password; however, the password referenced in your Dependabot configuration file must be the original (unencoded) password.
+# When using username and password,
+  npmrc's auth token may contain a 
+base64 encoded _password; 
+however, the password referenced in your Dependabot 
+configuration file must be the original (encoded) password.
 
-Note
-
-When using npm.pkg.github.com, d`
+When using pkg`
