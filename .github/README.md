@@ -31,7 +31,8 @@ values: npm, bundler, composer, devcontainers, dotnet-sdk, maven, mix, cargo, gr
 ```values_npm```
 bundler, composer, devcontainers, dotnet-sdk, maven, mix, cargo, gradle, nuget, gomod, docker, docker-compose, elm, gitsubmodule, github-actions, pip, terraform, pub, rust-toolchain, swift, bun, uv, vcpkg, helm, conda, julia, bazel, opentofu, pre-commit"```
 ---```
-# Location of package manifests #
+# package
+   update
     schedule: "daily "
       interval: "weekly"
 main
