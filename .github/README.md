@@ -5,13 +5,44 @@
 -Please see the documentation for all [configuration options](https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)
  
 # Dependabot.yml
-version: latest
-updates:stable-package
-# ecosystem: "pkg search <packages>" 
-# See documentation for <possible values>
-    directory: "The property"
-# updates/package-ecosystem
-values: "<npm, bundler, composer, devcontainers, dotnet-sdk, maven, mix, cargo, gradle, nuget, gomod, docker, docker-compose, elm, gitsubmodule, github-actions, pip, terraform, pub, rust-toolchain, swift, bun, uv, vcpkg, helm, conda, julia, bazel, opentofu, pre-commit>"
+  -version: latest
+   -updates:stable-package
+    -ecosystem: "pkg search <packages>" 
+* **See documentation 
+<possible values>
+      -directory: "<The property>"
+       -updates-package-ecosystem
+    -values: 
+     "<npm:
+-bundler, 
+-composer, 
+-devcontainers, 
+-dotnet-sdk, 
+-maven, 
+-mix, 
+-cargo, 
+-gradle, 
+-nuget, 
+-gomod, 
+-docker, 
+-docker-compose, 
+-elm, 
+-gitsubmodule, 
+-github-actions, 
+-pip, 
+-terraform, 
+-pub, 
+-rust-toolchain, 
+-swift, 
+-bun, 
+-uv, 
+-pkg, 
+-helm, 
+-conda, 
+-julia, 
+-bazel, 
+-opentofu, 
+-pre-commit>"
 
 # Location of package manifests
     schedule:
