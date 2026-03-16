@@ -1,16 +1,39 @@
 `.js
-Skip to main content
-GitHub Docs
-Security and code quality/How-tos/Secure your supply chain/Manage your dependency security/Configure access to private registries
-Configuring access to private registries for Dependabot
-You can configure Dependabot to access dependencies stored in private registries. You can store authentication information, like passwords and access tokens, as encrypted secrets and then reference these in the Dependabot configuration file. If you have registries on private networks, you can also configure Dependabot access when running Dependabot on self-hosted runners.
 
-Who can use this feature?
-Users with write access
+Security and code quality
+How-tos
+Secure your supply chain
+Manage your dependency security
+Configure access to private registries
+Configuring access to private registries
 
-In this article
-About private registries
-Dependabot version updates keeps your dependencies up-to-date and Dependabot security updates updates vulnerable dependencies. Dependabot can access public registries. In addition, you can give Dependabot access to private package registries and private GitHub repositories so that you can keep your private and innersource dependencies as up-to-date and secure as your public dependencies.
+Dependabot.js
+-configure Dependabot
+-access dependencies
+-private registries 
+
+# You can store authentication information
+-encrypted secrets
+-reference these in the Dependabot configuration 
+-private networks
+-configure Dependabot access 
+-self-hosted runners.
+
+
+Dependabot version updates 
+-dependencies 
+-security
+-vulnerable
+-Dependabot
+-public registries
+-Dependabot private 
+-package registries 
+
+# GitHub repositories 
+-keep private
+-innersource dependencies 
+-up-to-date
+-secure public dependencies.
 
 In most ecosystems, private dependencies are usually published to private package registries. These private registries are similar to their public equivalents, but they require authentication.
 
